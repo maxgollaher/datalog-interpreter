@@ -16,7 +16,7 @@ private:
 public:
     explicit Scanner(string &input) : input(input), lineNum(1) {}
 
-    ~Scanner() = default;;
+    ~Scanner() = default;
 
     int getLine() const { return lineNum; }
 
