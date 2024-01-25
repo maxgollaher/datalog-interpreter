@@ -1,0 +1,3 @@
+/mnt/c/Users/maxcg/OneDrive/Desktop/PAST/Summer23/CS236/cs236/labs/project05/datalog-interpreter/cmake-build-debug/CMakeFiles/project03.dir
+/mnt/c/Users/maxcg/OneDrive/Desktop/PAST/Summer23/CS236/cs236/labs/project05/datalog-interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/maxcg/OneDrive/Desktop/PAST/Summer23/CS236/cs236/labs/project05/datalog-interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir

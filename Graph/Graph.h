@@ -12,7 +12,7 @@ private:
 
 public:
     explicit Graph(size_t size) {
-        for (int nodeID = 0; nodeID < size; nodeID++)
+        for (int nodeID = 0; nodeID < (int) size; nodeID++)
             nodes[nodeID] = Node();
     }
 

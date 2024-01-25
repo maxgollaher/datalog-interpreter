@@ -1,9 +1,9 @@
 #ifndef PROJECT02_DATALOG_PROGRAM_H
 #define PROJECT02_DATALOG_PROGRAM_H
 
-#include "Parameter.h"
-#include "Predicate.h"
-#include "Rule.h"
+#include "Lexer/Parameter.h"
+#include "Lexer/Predicate.h"
+#include "Lexer/Rule.h"
 #include <set>
 
 class DatalogProgram {

@@ -5,7 +5,7 @@
 #include <utility>
 #include <vector>
 #include <sstream>
-#include "Scheme.h"
+#include "Lexer/Scheme.h"
 using namespace std;
 
 class Tuple : public vector<string> {

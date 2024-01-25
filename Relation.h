@@ -1,7 +1,7 @@
 #ifndef PROJECT03_RELATION_H
 #define PROJECT03_RELATION_H
 
-#include "Scheme.h"
+#include "Lexer/Scheme.h"
 #include "Tuple.h"
 #include <set>
 #include <map>

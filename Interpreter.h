@@ -1,12 +1,12 @@
-#ifndef PROJECT03_INTERPRETER_H
-#define PROJECT03_INTERPRETER_H
+#ifndef INTERPRETER_H
+#define INTERPRETER_H
 
 #include <iostream>
 #include "Relation.h"
 #include "DatalogProgram.h"
 #include "Database.h"
-#include "Scheme.h"
-#include "Graph.h"
+#include "Lexer/Scheme.h"
+#include "Graph/Graph.h"
 
 class Interpreter {
 private:
@@ -15,6 +15,11 @@ private:
 
 public:
     explicit Interpreter(DatalogProgram &datalog) : datalog(datalog), database() {
+    };
+
+    ~Interpreter() = default;
+
+    void evaluate() {
         evalSchemes();
         evalFacts();
         evalRules();
@@ -35,7 +40,6 @@ public:
         }
     };
 
-    // needs to evaluate things a second time. this is incorrect...
     void evalRules() {
         cout << "Rule Evaluation" << endl;
         bool changed = true;
@@ -196,4 +200,4 @@ public:
 };
 
 
-#endif //PROJECT03_INTERPRETER_H
+#endif //INTERPRETER_H
