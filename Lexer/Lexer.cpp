@@ -83,7 +83,6 @@ Token Lexer::getToken() {
             }
     }
     std::string unrecognizedChar(1, value);
-    if (!input.empty()) input = input.substr(1);
     return {UNDEFINED, unrecognizedChar, lineNum}; // unrecognized character
 }
 
@@ -92,8 +91,8 @@ Token Lexer::idToken(char value) {
     do {
         result << value;
         value = input[0];
-        if (!input.empty() && (std::isalpha(value) || std::isdigit(value))) input = input.substr(1);
-    } while (std::isalpha(value) || std::isdigit(value));
+        if (!input.empty() && std::isalnum(value)) input = input.substr(1);
+    } while (std::isalnum(value));
 
     // all ID tokens are compared with preset functions, those
     // functions are given priority over the ID token

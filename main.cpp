@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     parser.datalogProgram(datalogProgram);
 
     // use Interpreter to evaluate datalogProgram
-    Interpreter interpreter = Interpreter(datalogProgram);
+    auto interpreter = Interpreter(datalogProgram);
     interpreter.evaluate();
     infile.close();
 
